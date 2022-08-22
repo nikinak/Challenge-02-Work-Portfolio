@@ -1,14 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
+    background-color: #d9dcd6;
+    font-family: 'Arial';
+    color: rgb(109, 109, 109);
+}
+
+.header {
+    padding: 10px 10px 10px 0px;
+    font-family: 'Trebuchet MS';
+    background-color:rgb(4, 87, 87);
+    color: rgb(4, 87, 87);
+}
+
+.header h1 {
+    padding: 10px 10px 10px 20px ;
+    background-color: rgb(158, 185, 185);
+    display: inline-block;
+    font-size: 40px;
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    font-family: 'Gill Sans MT';
+    color: rgb(158, 185, 185);
+}
+
+.mainimage {
+    width:100%;
+    height: auto;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.supportimage {
+    height: auto;
+    max-width: 10%;
+    margin: 0px 20px 0px 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+.skillsimages {
+    height: auto;
+    max-width: 30%;
+    margin: 0px 20px 0px 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    color: rgb(4, 87, 87);
+    padding: 15px 15px 55px 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align:right;
+    font-size: 40px;
+    border-right-style:solid;
+    font-family: 'Gill Sans MT';
+}
+
+.sections {
     display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: #13293d;
-    color: #fff;
-  }
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+p {
+    line-height: 140%
+}
