@@ -96,15 +96,26 @@ li {
     position:relative;
 }
 
-.mainworkimage {
-    height: 400px;
-    max-width: auto;
-    margin: 0px 20px 0px 0px;
+.mainworkimageborder {
     border-style: solid;
     border-width:5px;
     border-color:  rgb(158, 185, 185);
+    display: inline-block;
+
+}
+
+.mainworkimage {
+    height: 400px;
+    max-width: auto;
+    display: block;
+    margin: 0px;
     background-size: cover;
     background-position: center;
+    filter:brightness(70%);
+}
+
+.mainworkimage:hover {
+    filter:brightness(100%);
 }
 
 .maintext {
@@ -114,26 +125,52 @@ li {
     background-color:  rgb(158, 185, 185);
 }
 
-.supportworkimage1 {
-    height: 175px;
-    max-width: auto;
-    margin: 0px 20px 0px 47px;
+.supportworkimage1border {
+    margin: 0px 100px 0px 47px;
     border-style: solid;
     border-width:5px;
     border-color:  rgb(158, 185, 185);
     background-size: cover;
     background-position: center;
+    display: inline-block;
+}
+
+.supportworkimage1 {
+    height: 175px;
+    max-width: auto;
+    margin: 0px;
+    background-size: cover;
+    background-position: center;
+    display:block;
+    filter:brightness(70%);
+}
+
+.supportworkimage1:hover {
+    filter:brightness(100%);
+}
+
+.supportworkimage2border {
+    margin: 39px 100px 0px 47px;
+    border-style: solid;
+    border-width:5px;
+    border-color:  rgb(158, 185, 185);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
 }
 
 .supportworkimage2 {
     height: 175px;
     max-width: auto;
-    margin: 47px 100px 0px 47px;
-    border-style: solid;
-    border-width:5px;
-    border-color:  rgb(158, 185, 185);
+    margin: 0px;
     background-size: cover;
     background-position: center;
+    display:block;
+    filter:brightness(70%);
+}
+
+.supportworkimage2:hover {
+    filter:brightness(100%);
 }
 
 h2 {
@@ -181,14 +218,6 @@ h6 {
 }
 
 .sections {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.sections2 {
     display: flex;
     align-items: flex-start;
     padding: 10px;
