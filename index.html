@@ -13,13 +13,16 @@
         <h1>Nicole Kurre</h1>
        <nav>
          <li>
-            <a href="#about-me">About Me</a>
+            <a class="a-nav" href="#about-me">About Me</a>
          </li>
          <li>
-            <a href="#work">Work</a>
+            <a class="a-nav" href="#skills">Skills</a>
          </li>
          <li>
-            <a href="#contact-me">Contact Me</a>
+            <a class="a-nav" href="#work">Work</a>
+         </li>
+         <li>
+            <a class="a-nav" href="#contact-me">Contact Me</a>
          </li>
        </nav>
     </section>
@@ -29,10 +32,10 @@
     </section>
 
     <main>
-        <section class="sections">
+        <section id="about-me" class="sections">
            <h2>About Me</h2>
            <img class="supportimage" src="./assets/images/me.jpg" alt="Coding Image" />
-           <p>
+           <p class="topp">
             I have over six years of experience in complex and cross-functional project management and process improvement / design, with skills in problem solving through ambiguity, analytics, and executive presentations. My work has focused on implementation and transformations, working to enhance technical integration solutions, improve data accuracy and management, and develop flexible and scalable implementation plans.
             <br>
             <br>
@@ -40,32 +43,50 @@
             </p>
        </section>
 
-       <section class="sections">
+       <section id="skills" class="sections">
             <h2>Skills</h2>
             <img class="skillsimages" src="./assets/images/soft-skills.jpg" alt="Coding Image" />
             <img class="skillsimages" src="./assets/images/technical-skills.jpg" alt="Coding Image" />
         </section>
 
-       <section class="sections">
+       <section id="work" class="sections2">
             <h2>Work</h2>
-            <img class="skillsimages" src="./assets/images/Horiseon.jpg" alt="Coding Image" />
-            <img class="skillsimages" src="./assets/images/pre-work-study.png" alt="Coding Image" />
+            <section class="container">
+            <a href="https://nikinak.github.io/challenge-01/">
+            <img class="workimages" src="./assets/images/Horiseon.jpg" alt="Coding Image" />
+            </a>
+            <p class="text"><span class="bold">Horiseon</span><br><span class="small" >Code Cleanup in CSS/HTML</span></p>
+            </section>
+            <section class="container">
+            <a href="https://nikinak.github.io/prework-study-guide/">
+            <img class="workimages" src="./assets/images/pre-work-study.jpg" alt="Coding Image" />
+            </a>
+            <p class="text"><span class="bold">Pre-work Study Guide</span><br><span class="small" >HTML</span></p>
+            </section>
+            <section class="container">
+                <a href="https://nikinak.github.io/prework-study-guide/">
+                <img class="workimages" src="./assets/images/pre-work-study.jpg" alt="Coding Image" />
+                </a>
+                <p class="text"><span class="bold">Pre-work Study Guide</span><br><span class="small" >HTML</span></p>
+                </section>
         </section>
 
-        <section class="sections">
-            <h2>Contact Me</h2>
+        <section id="contact-me" class="sections">
+            <h3>Contact Me</h2>
+            <section class="vertical-align">
             <li>
-            <a href="hi">(909)708-6207</a>
+            <a class="a-contact" href="hi">(909)708-6207</a>
             </li>
             <li>
-            <a href="mailto:nicole.a.kurre@gmail.com">nicole.a.kurre@gmail.com</a>
+            <a class="a-contact" href="mailto:nicole.a.kurre@gmail.com">nicole.a.kurre@gmail.com</a>
             </li>
             <li>
-            <a href="https://github.com/nikinak?tab=repositories">GitHub</a>
+            <a class="a-contact" href="https://github.com/nikinak?tab=repositories">GitHub</a>
             </li>
             <li>
-            <a href="https://www.linkedin.com/in/nicoleannek">LinkedIn</a>
+            <a class="a-contact" href="https://www.linkedin.com/in/nicoleannek">LinkedIn</a>
             </li>
+            </section>
         </section>
 
   </body>
