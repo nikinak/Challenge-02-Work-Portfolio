@@ -67,10 +67,51 @@ li {
     background-position: center;
 }
 
-.workimages {
-    height: auto;
-    max-width: 70%;
+.container {
+    display: flex;
+    flex-direction:row;
+    position:relative;
+}
+
+.containersupport {
+    display: flex;
+    flex-direction:column;
+    position:relative;
+}
+
+.mainworkimage {
+    height: 400px;
+    max-width: auto;
     margin: 0px 20px 0px 0px;
+    border-style: solid;
+    border-width:5px;
+    border-color:  rgb(158, 185, 185);
+    background-size: cover;
+    background-position: center;
+}
+
+.maintext {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 10px 10px 30px;
+    background-color:  rgb(158, 185, 185);
+}
+
+.supportworkimage1 {
+    height: 175px;
+    max-width: auto;
+    margin: 0px 20px 0px 47px;
+    border-style: solid;
+    border-width:5px;
+    border-color:  rgb(158, 185, 185);
+    background-size: cover;
+    background-position: center;
+}
+
+.supportworkimage2 {
+    height: 175px;
+    max-width: auto;
+    margin: 47px 100px 0px 47px;
     border-style: solid;
     border-width:5px;
     border-color:  rgb(158, 185, 185);
@@ -80,10 +121,42 @@ li {
 
 h2 {
     color: rgb(4, 87, 87);
-    padding: 15px 15px 55px 50px;
+    padding: 15px 15px 120px 84px;
     margin-left: 20px;
     margin-right: 20px;
-    width: 400px;
+    text-align:right;
+    font-size: 40px;
+    border-right-style:solid;
+    font-family: 'Gill Sans MT';
+}
+
+h4 {
+    color: rgb(4, 87, 87);
+    padding: 15px 15px 230px 107px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align:right;
+    font-size: 40px;
+    border-right-style:solid;
+    font-family: 'Gill Sans MT';
+}
+
+h5 {
+    color: rgb(4, 87, 87);
+    padding: 15px 15px 240px 95px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align:right;
+    font-size: 40px;
+    border-right-style:solid;
+    font-family: 'Gill Sans MT';
+}
+
+h6 {
+    color: rgb(4, 87, 87);
+    padding: 15px 15px 15px 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align:right;
     font-size: 40px;
     border-right-style:solid;
@@ -110,14 +183,20 @@ h2 {
     line-height: 140%
 }
 
-.container {
-    position:relative;
-}
-
-.text {
+.supporttext1 {
     position: absolute;
     bottom: 20px;
     padding: 10px 10px 10px 30px;
+    margin-left: 50px;
+    background-color:  rgb(158, 185, 185);
+}
+
+.supporttext2 {
+    position: absolute;
+    margin-top:100px;
+    bottom: 20px;
+    padding: 10px 10px 10px 30px;
+    margin-left: 50px;
     background-color:  rgb(158, 185, 185);
 }
 
@@ -125,7 +204,7 @@ h2 {
     font-weight: bold;
     line-height: 110%;
     color: rgb(4, 87, 87);
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .small {
@@ -146,9 +225,10 @@ h3 {
 .a-contact {
     font-family: 'Gill Sans MT';
     color:  rgb(4, 87, 87);
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 23px;
 }
 
 .vertical-align {
-    margin-top: 23px;
+    margin-top: 39px;
 }
