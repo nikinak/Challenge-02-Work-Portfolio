@@ -1,54 +1,33 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* defines common color variables*/
+:root {
+    --darkblue: rgb(4, 87, 87);
+    --lightblue: rgb(158, 185, 185);
 }
 
+/* defines default text formatting*/
 body {
     background-color: #d9dcd6;
     font-family: 'Arial';
     color: rgb(109, 109, 109);
 }
 
+/* defines text & spacing formatting for my header section*/
 .header {
     padding: 10px 10px 10px 0px;
     font-family: 'Trebuchet MS';
-    background-color:rgb(4, 87, 87);
-    color: rgb(4, 87, 87);
+    background-color:var(--darkblue);
+    color: var(--darkblue);
 }
 
+/* defines text & spacing formatting for my specific header*/
 .header h1 {
     padding: 10px 10px 10px 20px ;
-    background-color: rgb(158, 185, 185);
+    background-color: var(--lightblue);
     display: inline-block;
-    font-size: 40px;
+    font-size: 2vw;
 }
 
-.section {
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-}
-
-.mainimage {
-    height: auto;
-    width: 100%;
-    margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
-}
-
-h7 {
-    position: absolute;
-    padding: 10px 10px 10px 30px;
-    background-color:  rgb(158, 185, 185);
-    color: rgb(4, 87, 87);
-    font-family: 'Trebuchet MS';
-    font-size: 30px;
-    top:80%;
-    right:0px;
-}
-
+/* defines positioning of my navigation bar on the right side*/
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -57,239 +36,268 @@ nav {
     list-style-type: none;
 }
 
+/* applies to all list items to be inline with set margin width*/
 li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Defines text formatting specifcally for nav bar items*/
 .a-nav {
     font-family: 'Gill Sans MT';
-    color: rgb(158, 185, 185);
+    color: var(--lightblue);
+    font-size:1.5vw;
 }
 
+/* positions section as relative to enable text overlap used for sub-sections as well*/
+.container {
+    position:relative;
+}
+
+/* defines image formatting, enabling changes when page is resized*/
+.mainimage {
+    height: auto;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/* positions sub header as absolute to enable text overlap and provides text formatting*/
+h2 {
+    position: absolute;
+    padding: 10px 10px 10px 30px;
+    background-color: var(--lightblue);
+    color:var(--darkblue);
+    font-family: 'Trebuchet MS';
+    font-size: 2vw;
+    top:80%;
+    right:0px;
+}
+
+/* for each section of work ensures that display is flex - added flex-start property to enable image reformatting upon screen resizing*/
+.section1 {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* assigns the text formatting for all section headers - all formatting other than padding match so one element is sufficient*/
+h3, h4, h5, h6 {
+    color: var(--darkblue);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align:right;
+    font-size: 40px;
+    border-right-style:solid;
+    font-family: 'Gill Sans MT';
+}
+
+/*Unique padding for each section to ensure vertical alignment of borders*/
+.paddingh3 {
+    padding: 15px 15px 120px 84px;
+}
+
+/*Defines image details to enable responsive resizing as page size changes; adds rounding property to image*/
 .supportimage {
     height: auto;
     max-width: 10%;
     margin: 0px 20px 0px 0px;
     border-radius: 200px;
-    background-size: cover;
-    background-position: center;
 }
 
+/* for each section of work ensures that display is flex - default flex properties of row are sufficient here so no additional flex variables are defined*/
 .sections {
     display: flex;
-    align-items: flex-start;
     padding: 10px;
     text-align: left;
     padding-left: 20px;
 }
 
-.sectionstest {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.skillsimagecontainer {
-    display:flex;
-    flex-wrap: wrap;
-}
-.skillsimagesleft {
-    flex:50%;
-    margin: 0px 20px 0px 0px;
-}
-
-.skillsimagesright {
-    margin: 0px 20px 0px 0px;
-    flex:50%;
-}
-
-.container {
-    display: flex;
-    flex-direction:row;
-    position:relative;
-}
-
-.containersupport {
-    display: flex;
-    flex-direction:column;
-    position:relative;
-}
-
-.mainworkimageborder {
-    border-style: solid;
-    border-width:5px;
-    border-color:  rgb(158, 185, 185);
-    display: inline-block;
-
-}
-
-.mainworkimage {
-    height: 450px;
-    display: block;
-    margin: 0px;
-    background-size: cover;
-    background-position: center;
-    filter:brightness(70%);
-}
-
-.mainworkimage:hover {
-    filter:brightness(100%);
-}
-
-.maintext {
-    position: absolute;
-    bottom: 20px;
-    padding: 10px 10px 10px 30px;
-    background-color:  rgb(158, 185, 185);
-}
-
-.supportworkimage1border {
-    margin: 0px 100px 0px 47px;
-    border-style: solid;
-    border-width:5px;
-    border-color:  rgb(158, 185, 185);
-    background-size: cover;
-    background-position: center;
-    display: inline-block;
-}
-
-.supportworkimage1 {
-    height: 240px;
-    margin: 0px;
-    background-size: cover;
-    background-position: center;
-    display:block;
-    filter:brightness(70%);
-}
-
-.supportworkimage1:hover {
-    filter:brightness(100%);
-}
-
-.supportworkimage2border {
-    margin: 25px 100px 0px 47px;
-    border-style: solid;
-    border-width:5px;
-    border-color:  rgb(158, 185, 185);
-    background-size: cover;
-    background-position: center;
-    display: inline-block;
-}
-
-.supportworkimage2 {
-    height: 175px;
-    max-width: auto;
-    margin: 0px;
-    background-size: cover;
-    background-position: center;
-    display:block;
-    filter:brightness(70%);
-}
-
-.supportworkimage2:hover {
-    filter:brightness(100%);
-}
-
-h2 {
-    color: rgb(4, 87, 87);
-    padding: 15px 15px 120px 84px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align:right;
-    font-size: 40px;
-    border-right-style:solid;
-    font-family: 'Gill Sans MT';
-}
-
-h4 {
-    color: rgb(4, 87, 87);
-    padding: 15px 15px 230px 107px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align:right;
-    font-size: 40px;
-    border-right-style:solid;
-    font-family: 'Gill Sans MT';
-}
-
-h5 {
-    color: rgb(4, 87, 87);
-    padding: 15px 15px 240px 95px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align:right;
-    font-size: 40px;
-    border-right-style:solid;
-    font-family: 'Gill Sans MT';
-}
-
-h6 {
-    color: rgb(4, 87, 87);
-    padding: 15px 15px 15px 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align:right;
-    font-size: 40px;
-    border-right-style:solid;
-    font-family: 'Gill Sans MT';
-}
-
+/*line spacing for paragraph*/
 .topp {
     line-height: 140%
 }
 
+/*Unique padding for each section to ensure vertical alignment of borders*/
+.paddingh4 {
+    padding: 15px 15px 230px 107px;
+}
+
+/*margin spacing for skill images; images auto wrap so flex settings not required*/
+.skillsimages{
+    margin: 0px 20px 0px 0px;
+    max-height: 15vw;
+}
+
+/*Unique padding for each section to ensure vertical alignment of borders*/
+.paddingh5 {
+    padding: 15px 15px 240px 95px;
+}
+
+/*border defined separate from the image to enable filtering to the image only*/
+.mainworkimageborder {
+    border-style: solid;
+    border-width:5px;
+    border-color:  var(--lightblue);
+}
+
+/*defines image formatting for pre-hover adding a filter by default*/
+.mainworkimage {
+    height: 450px;
+    display: block;
+    margin: 0px;
+    filter:brightness(70%);
+}
+
+/*removes filter on image when hovered over*/
+.mainworkimage:hover {
+    filter:brightness(100%);
+}
+
+/*provides formatting for text box overlayed on imageremoves filter on image when hovered over*/
+.maintext {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 10px 10px 30px;
+    background-color: var(--lightblue);
+}
+
+/*span formatting for inside the text box*/
+.bold {
+    font-weight: bold;
+    line-height: 110%;
+    color: var(--darkblue);
+    font-size: 20px;
+}
+
+/*span formatting for inside the text box*/
+.small {
+    font-size: 10px;
+}
+
+/*separate defined container for support images given stacking is vertical rather than horizontal*/
+.containersupport {
+    display: flex;
+    flex-direction:column;
+}
+
+/*border defined separate from the image to enable filtering to the image only*/
+.supportworkimage1border {
+    margin: 0px 100px 0px 47px;
+    border-style: solid;
+    border-width:5px;
+    border-color: var(--lightblue);
+    display: inline-block;
+}
+
+/*defines image formatting for pre-hover adding a filter by default*/
+.supportworkimage1 {
+    height: 240px;
+    margin: 0px;
+    display:block;
+    filter:brightness(70%);
+}
+
+/*removes filter on image when hovered over*/
+.supportworkimage1:hover {
+    filter:brightness(100%);
+}
+
+/*provides formatting for text box overlayed on imageremoves filter on image when hovered over*/
 .supporttext1 {
     position: absolute;
     bottom: 20px;
     padding: 10px 10px 10px 30px;
     margin-left: 50px;
-    background-color:  rgb(158, 185, 185);
+    background-color: var(--lightblue);
 }
 
+/*border defined separate from the image to enable filtering to the image only*/
+.supportworkimage2border {
+    margin: 22px 100px 0px 47px;
+    border-style: solid;
+    border-width:5px;
+    border-color: var(--lightblue);
+    display: inline-block;
+}
+
+/*defines image formatting for pre-hover adding a filter by default*/
+.supportworkimage2 {
+    height: 175px;
+    margin: 0px;
+    display:block;
+    filter:brightness(70%);
+}
+
+/*removes filter on image when hovered over*/
+.supportworkimage2:hover {
+    filter:brightness(100%);
+}
+
+/*provides formatting for text box overlayed on imageremoves filter on image when hovered over*/
 .supporttext2 {
     position: absolute;
     margin-top:100px;
     bottom: 20px;
     padding: 10px 10px 10px 30px;
     margin-left: 50px;
-    background-color:  rgb(158, 185, 185);
+    background-color: var(--lightblue);
 }
 
-.bold {
-    font-weight: bold;
-    line-height: 110%;
-    color: rgb(4, 87, 87);
-    font-size: 20px;
+/*Unique padding for each section to ensure vertical alignment of borders*/
+.paddingh6 {
+    padding: 15px 15px 15px 50px;
 }
 
-.small {
-    font-size: 10px;
+/*aligns contact information center to contact me, and ensures wrap during screen re-sizing*/
+.vertical-align {
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
 }
 
-h3 {
-    color: rgb(4, 87, 87);
-    padding: 15px 15px 10px 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align:right;
-    font-size: 40px;
-    border-right-style:solid;
-    font-family: 'Gill Sans MT';
-}
-
+/*text formatting for contact information, added line height for readability during screen re-sizing*/
 .a-contact {
     font-family: 'Gill Sans MT';
-    color:  rgb(4, 87, 87);
+    color:  var(--darkblue);
     font-size: 30px;
     margin-top: 23px;
     text-decoration:underline;
     text-underline-offset: 10px;
-    text-decoration-color: rgb(158, 185, 185);
+    text-decoration-color: var(--lightblue);
+    line-height: 160%;
 }
 
-.vertical-align {
-    margin-top: 39px;
-}
+/* Moves nav bar below when mobile viewing; text sub-header higher into the image; section padding farther left*/
+@media screen and (max-width: 750px) {
+
+    h2 {
+        top: 30%;
+    }
+
+    nav {
+        float: none;
+    }
+
+    h3, h4, h5, h6 {
+        font-size: 20px;
+    }
+
+    .paddingh3 {
+        padding: 15px 15px 120px 15px;
+    }
+
+    .paddingh4 {
+        padding: 15px 15px 120px 28px;
+    }
+
+    .paddingh5 {
+        padding: 15px 15px 120px 23px;
+    }
+
+    .paddingh6 {
+        padding: 15px 15px 120px 0px;
+    }
+
+    }
