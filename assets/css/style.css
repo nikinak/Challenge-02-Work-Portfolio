@@ -76,12 +76,34 @@ li {
     background-position: center;
 }
 
-.skillsimages {
-    height: auto;
-    max-width: 30%;
+.sections {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.sectionstest {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.skillsimagecontainer {
+    display:flex;
+    flex-wrap: wrap;
+}
+.skillsimagesleft {
+    flex:50%;
     margin: 0px 20px 0px 0px;
-    background-size: cover;
-    background-position: center;
+}
+
+.skillsimagesright {
+    margin: 0px 20px 0px 0px;
+    flex:50%;
 }
 
 .container {
@@ -105,8 +127,7 @@ li {
 }
 
 .mainworkimage {
-    height: 400px;
-    max-width: auto;
+    height: 450px;
     display: block;
     margin: 0px;
     background-size: cover;
@@ -136,8 +157,7 @@ li {
 }
 
 .supportworkimage1 {
-    height: 175px;
-    max-width: auto;
+    height: 240px;
     margin: 0px;
     background-size: cover;
     background-position: center;
@@ -150,7 +170,7 @@ li {
 }
 
 .supportworkimage2border {
-    margin: 39px 100px 0px 47px;
+    margin: 25px 100px 0px 47px;
     border-style: solid;
     border-width:5px;
     border-color:  rgb(158, 185, 185);
@@ -217,14 +237,6 @@ h6 {
     font-family: 'Gill Sans MT';
 }
 
-.sections {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px;
-    text-align: left;
-    padding-left: 20px;
-}
-
 .topp {
     line-height: 140%
 }
@@ -273,6 +285,9 @@ h3 {
     color:  rgb(4, 87, 87);
     font-size: 30px;
     margin-top: 23px;
+    text-decoration:underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(158, 185, 185);
 }
 
 .vertical-align {
