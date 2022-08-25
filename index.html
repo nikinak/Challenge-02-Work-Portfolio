@@ -11,7 +11,7 @@
   <body>
     <section class="header">
         <h1>Nicole Kurre</h1>
-       <nav>
+       <nav role="navigation">
          <li>
             <a class="a-nav" href="#about-me">About Me</a>
          </li>
@@ -27,7 +27,7 @@
        </nav>
     </section>
 
-    <section class="container">
+    <section class="headercontainer">
         <img class="mainimage" src="./assets/images/header.jpg" alt="Coding Image" />
         <h2>Portfolio for Growing Technical Skills</h2>
     </section>
@@ -35,71 +35,69 @@
     <main>
         <section class="section1">
            <h3 class="paddingh3" id="about-me">About Me</h3>
-           <img class="supportimage" src="./assets/images/me.jpg" alt="Coding Image" />
-           <p class="topp">
-            I have over six years of experience in complex and cross-functional project management and process improvement / design, with skills in problem solving through ambiguity, analytics, and executive presentations. My work has focused on implementation and transformations, working to enhance technical integration solutions, improve data accuracy and management, and develop flexible and scalable implementation plans.
-            <br>
-            <br>
-            Passions: Backpacking, Snowboarding, Book Clubs, General Adventuring 
+            <img class="supportimage" src="./assets/images/me.jpg" alt="Coding Image" />
+            <p class="topp">
+               I have over six years of experience in complex and cross-functional project management and process improvement / design, with skills in problem solving through ambiguity, analytics, and executive presentations. My work has focused on implementation and transformations, working to enhance technical integration solutions, improve data accuracy and management, and develop flexible and scalable implementation plans.
+               <br>
+               <br>
+               Passions: Backpacking, Snowboarding, Book Clubs, General Adventuring 
             </p>
        </section>
 
        <section class="sections">
             <h4 class="paddingh4" id="skills">Skills</h4>
-            <section >           
-            <img class="skillsimages" src="./assets/images/soft-skills.jpg" alt="Coding Image" />
-            <img class="skillsimages" src="./assets/images/technical-skills.jpg" alt="Coding Image" />
-            </section>
+            <div>           
+              <img class="skillsimages" src="./assets/images/soft-skills.jpg" alt="Coding Image" />
+              <img class="skillsimages" src="./assets/images/technical-skills.jpg" alt="Coding Image" />
+            </div>
         </section>
 
-       <section class="sections">
+       <section class="worksection">
             <h5 class="paddingh5" id="work">Work</h5>
-            <section class="container">
-            <section class="mainworkimageborder">
-                <a href="https://nikinak.github.io/challenge-01/">
-            <img class="mainworkimage" src="./assets/images/Horiseon.jpg" alt="Coding Image" />
-            </a>
-            </section>
-            <p class="maintext"><span class="bold">Horiseon</span><br><span class="small" >Code Cleanup in CSS/HTML</span></p>
-            </section>
-            <section class="containersupport">
-            <section class="container">
-            <section class="supportworkimage1border">
-            <a href="https://nikinak.github.io/prework-study-guide/">
-            <img class="supportworkimage1" src="./assets/images/pre-work-study.jpg" alt="Coding Image" />
-            </a>
-            </section>
-            <p class="supporttext1"><span class="bold">Pre-work Study Guide</span><br><span class="small" >HTML</span></p>
-            </section>
-            <section class="container">
-            <section class="supportworkimage2border">
-                <a href="https://nikinak.github.io/prework-study-guide/">
-                <img class="supportworkimage2" src="./assets/images/tbd.jpg" alt="Coding Image" />
-                </a>
-                </section>
-                <p class="supporttext2"><span class="bold">Placeholder</span><br><span class="small" >TBD</span></p>
-                </section>
-            </section>
-            </section>
+                 <div class="imagecontainer">
+                    <section class="mainworkimageborder">
+                        <a href="https://nikinak.github.io/challenge-01/">
+                        <img class="mainworkimage" src="./assets/images/Horiseon.jpg" alt="Coding Image" />
+                        </a>
+                    </section>
+                    <p class="maintext"><span class="bold">Horiseon</span><br><span class="small" >Code Cleanup in CSS/HTML</span></p>
+                  </div>
+                 <div class="containersupport">
+                     <div class="imagecontainer">
+                        <section class="supportworkimage1border">
+                          <a href="https://nikinak.github.io/prework-study-guide/">
+                          <img class="supportworkimage1" src="./assets/images/pre-work-study.jpg" alt="Coding Image" />
+                          </a>
+                        </section>
+                        <p class="supporttext1"><span class="bold">Study Guide</span><br><span class="small" >HTML</span></p>
+                      </div>
+                     <div class="imagecontainer">
+                        <section class="supportworkimage2border">
+                            <a href="https://github.com/nikinak/Under-Construction">
+                            <img class="supportworkimage2" src="./assets/images/tbd.jpg" alt="Coding Image" />
+                            </a>
+                        </section>
+                        <p class="supporttext2"><span class="bold">Placeholder</span><br><span class="small" >TBD</span></p>
+                     </div>
+                </div>
         </section>
 
         <section class="sections">
             <h6 class="paddingh6" id="contact-me">Contact <br> Me</h6>
-            <section class="vertical-align">
-            <li>
-            <a class="a-contact" href="tel:909-708-6207">(909)708-6207</a>
-            </li>
-            <li>
-            <a class="a-contact" href="mailto:nicole.a.kurre@gmail.com">nicole.a.kurre@gmail.com</a>
-            </li>
-            <li>
-            <a class="a-contact" href="https://github.com/nikinak?tab=repositories">GitHub</a>
-            </li>
-            <li>
-            <a class="a-contact" href="https://www.linkedin.com/in/nicoleannek">LinkedIn</a>
-            </li>
-            </section>
+            <div class="vertical-align">
+               <li>
+                 <a class="a-contact" href="tel:909-708-6207">(909)708-6207</a>
+               </li>
+               <li>
+                 <a class="a-contact" href="mailto:nicole.a.kurre@gmail.com">nicole.a.kurre@gmail.com</a>
+               </li>
+               <li>
+                 <a class="a-contact" href="https://github.com/nikinak?tab=repositories">GitHub</a>
+               </li>
+               <li>
+                 <a class="a-contact" href="https://www.linkedin.com/in/nicoleannek">LinkedIn</a>
+               </li>
+              </div>
         </section>
-
   </body>
 </html>
