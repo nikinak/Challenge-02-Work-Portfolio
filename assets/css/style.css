@@ -48,8 +48,8 @@ li {
     color: var(--lightblue);
 }
 
-/* positions section as relative to enable text overlap used for sub-sections as well*/
-.container {
+/* Defines header as relative to enable overlap text with sub-header*/
+.headercontainer {
     position:relative;
 }
 
@@ -105,18 +105,19 @@ h3, h4, h5, h6 {
     border-radius: 200px;
 }
 
-/* for each section of work ensures that display is flex - default flex properties of row are sufficient here so no additional flex variables are defined*/
-.sections {
-    display: flex;
-    padding: 10px;
-    text-align: left;
-    padding-left: 20px;
-}
-
 /*line spacing for paragraph*/
 .topp {
     line-height: 140%;
     font-size: 20px;
+}
+
+/* for most sections of the page, ensures that display is flex*/
+.sections {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
 }
 
 /*Unique padding for each section to ensure vertical alignment of borders*/
@@ -130,9 +131,23 @@ h3, h4, h5, h6 {
     max-height: 400px;
 }
 
+/* Specific formatting for work section to enable image wrap of containers */
+.worksection {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
 /*Unique padding for each section to ensure vertical alignment of borders*/
 .paddingh5 {
     padding: 15px 15px 240px 95px;
+}
+
+/* Defines overarching image container to enable overlap of text boxes*/
+.imagecontainer {
+    position:relative;
 }
 
 /*border defined separate from the image to enable filtering to the image only*/
@@ -269,16 +284,29 @@ h3, h4, h5, h6 {
     line-height: 160%;
 }
 
-@media screen and (max-width: 1560) {
-
-    .mainworkimage {
-        height: 250px;
+/* formatting for screen size when work images wrap, elements specify margins that make the elements still visually appealing */
+@media screen and (max-width: 1560px) {
+    
+    .supportworkimage1border {
+        margin: 20px 100px 0px 370px;
+    }
+    
+    .supporttext1 {
+        margin-left: 370px;
     }
 
+    .supportworkimage2border {
+        margin: 22px 100px 0px 370px;
     }
 
-/* Moves nav bar below when mobile viewing; text sub-header higher into the image; section padding farther left*/
-@media screen and (max-width: 950px) {
+    .supporttext2 {
+        margin-left: 370px;
+    }
+
+} 
+
+/* Moves nav bar below when mobile viewing; text sub-header higher into the image; section padding farther left; shrinking of work images to fit screen*/
+@media screen and (max-width: 980px) {
 
     nav {
         float: none;
@@ -306,21 +334,104 @@ h3, h4, h5, h6 {
         padding: 15px 15px 120px 23px;
     }
 
+    .mainworkimage {
+        height: 250px;
+    }
+
+    .supportworkimage1border {
+        margin: 20px 100px 0px 136px;
+    }
+
+    .supportworkimage1 {
+        height: 140px;
+    }
+    
+    .supporttext1 {
+        margin-left: 140px;
+    }
+
+    .supportworkimage2border {
+        margin: 22px 100px 0px 136px;
+    }
+
+    .supportworkimage2 {
+        height: 103px;
+    }
+
+    .supporttext2 {
+        margin-left: 140px;
+    }
+
     .paddingh6 {
-        padding: 15px 15px 120px 0px;
+        padding: 15px 15px 10px 0px;
     }
 
     .a-contact {
         font-size: 20px;
     }
 
+}
+
+/* shrinks skills images to fit a smaller screen in a more visually appealing way */
+@media screen and (max-width: 750px) {
+        
+    .skillsimages{
+        max-height: 200px;
+    }
+    
+}
+
+/* revises all elements for optimal mobile viewing */
+@media screen and (max-width: 575px) {
+        
+    h2 {
+        top: 60%;
+        font-size: 20px;
     }
 
-    @media screen and (max-width: 750px) {
+    .topp {
+        line-height: 140%;
+        font-size: 10px;
+    }
         
-        .skillsimages{
-            max-height: 200px;
-        }
-
+    .skillsimages{
+        max-height: 100px;
+    }
+     
+    .mainworkimage {
+        height: 140px;
+    }
+        
+    .supportworkimage1border {
+        margin: 20px 100px 0px 136px;
+    }
     
-        }
+    .supportworkimage1 {
+        height: 90px;
+    }
+            
+    .supporttext1 {
+        margin-left: 140px;
+    }
+        
+    .supportworkimage2border {
+        margin: 22px 100px 0px 136px;
+    }
+        
+    .supportworkimage2 {
+        height: 75px;
+    }
+        
+    .supporttext2 {
+        margin-left: 140px;
+    }
+
+    .bold {
+        line-height: 90%;
+        font-size: 10px;
+    }
+        
+    .small {
+        font-size: 5px;  
+    }
+}
